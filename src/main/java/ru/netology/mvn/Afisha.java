@@ -25,7 +25,7 @@ public class Afisha {
         return films;
     }
 
-    public String[] findLast(){
+    public String[] findLast() {
 
         int length;
         if(films.length < limit) {
