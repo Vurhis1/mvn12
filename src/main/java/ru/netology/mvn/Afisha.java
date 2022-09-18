@@ -12,13 +12,13 @@ public class Afisha {
         this.limit = limit;
     }
 
-    public void addFilm (String film) {
+    public void addFilm(String film) {
         String[] tmp = new String[films.length + 1];
         for (int i = 0; i < films.length; i++) {
             tmp[i] = films[i];
         }
-            tmp[tmp.length - 1] = film;
-            films = tmp;
+        tmp[tmp.length - 1] = film;
+        films = tmp;
     }
 
     public String[] findAll() {
@@ -28,13 +28,13 @@ public class Afisha {
     public String[] findLast() {
 
         int length;
-        if(films.length < limit) {
+        if (films.length < limit) {
             length = films.length;
         } else {
             length = limit;
         }
 
-        String[] tmp = new String[10];
+        String[] tmp = new String[length];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = films[films.length - 1 - i];
         }
